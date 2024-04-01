@@ -10,7 +10,7 @@ module AppleAuth
     end
 
     def validate!
-      token_data = JWTDecoder.new(jwt).call
+      token_data = JWTDecoder.new(@jwt).call
 
       JWTConditions.new(user_identity, token_data).validate!
 
