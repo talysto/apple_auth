@@ -71,7 +71,8 @@ module AppleAuth
       {
         site: APPLE_AUD,
         authorize_url: '/auth/authorize',
-        token_url: '/auth/token'
+        token_url: '/auth/token',
+        auth_scheme: :request_body
       }
     end
 
